@@ -1,0 +1,71 @@
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  @include mobile-height {
+    padding: 10px;
+  }
+
+  &__logo {
+    height: 100px;
+    width: auto;
+
+    @include mobile-large {
+      height: 80px;
+    }
+
+    @include mobile {
+      height: 50px;
+    }
+
+    @include mobile-height {
+      height: 50px;
+    }
+
+    &--medium {
+      height: 100px;
+
+      @include mobile-large {
+        height: 74px;
+      }
+
+      @include mobile {
+        height: 44px;
+      }
+
+      @include mobile-height {
+        height: 44px;
+      }
+    }
+
+    &--small {
+      height: 80px;
+
+      @include mobile-large {
+        height: 60px;
+      }
+
+      @include mobile {
+        height: 40px;
+      }
+
+      @include mobile-height {
+        height: 40px;
+      }
+
+    }
+
+    img {
+      @extend .img-contain;
+    }
+  }
+}

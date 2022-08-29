@@ -1,0 +1,86 @@
+.btn {
+  display: flex;
+  align-items: center;
+  font: inherit;
+  font-size: 20px;
+  line-height: 1;
+  color: #fff;
+  border-radius: 24px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+  transition: all .2s linear;
+  text-align: center;
+  flex-shrink: 0;
+
+  @include mobile {
+    font-size: 18px;
+  }
+
+
+  svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    @include mobile-height {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &--primary {
+    padding: 16px 24px;
+    background-color: darken(#2c6899, 24%);
+
+    @include mobile-height {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+
+    &:hover, &:focus {
+      transform: scale(1.01);
+      background-color: darken(#2c6899, 30%);
+      box-shadow: 4px 4px 4px 1px rgba(10, 23, 34, .5);
+    }
+  }
+
+  &--secondary {
+    padding: 12px 20px;
+    background-color: #2c6899;
+
+    &:hover, &:focus {
+      background-color: darken(#2c6899, 10%);
+      box-shadow: 4px 4px 4px 1px rgba(10, 23, 34, .5);
+    }
+
+    @include mobile-height {
+      font-size: 16px;
+      padding: 10px 18px;
+    }
+
+    & + & {
+      margin-left: 40px;
+
+      @include mobile {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+
+    &::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      background: url("../images/site-icon.svg") no-repeat center / contain;
+
+      @include mobile-height {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

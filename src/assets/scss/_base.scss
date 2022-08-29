@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  background: #fff url("../images/bg.jpg") no-repeat center / cover;
+
+  font-family: $base-fonts;
+  color: $primary;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  &.show-sidebar {
+    overflow: hidden;
+  }
+
+}
+
+.hidden-title {
+  visibility: hidden;
+  height: 0;
+}
+
+.page-mask {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  height: 100%;
+  background-color: rgba(0,0,0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: all .2s linear;
+
+
+  .show-sidebar & {
+    background-color: rgba(0,0,0,.8);
+    z-index: 3;
+  }
+}

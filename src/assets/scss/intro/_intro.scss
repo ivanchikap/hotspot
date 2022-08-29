@@ -1,0 +1,50 @@
+.intro {
+  text-align: center;
+
+  &__title {
+    font-size: 62px;
+    font-weight: 600;
+    margin-bottom: 64px;
+    text-align: center;
+
+    @include laptop {
+      font-size: 50px;
+    }
+    
+    @include mobile-large {
+      font-size: 40px;
+      margin-bottom: 44px;
+    }
+
+    @include mobile {
+      font-size: 34px;
+      margin-bottom: 34px;
+    }
+
+    @include mobile-height {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bottom-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include mobile-height {
+      margin-top: 14px;
+    }
+  }
+}
