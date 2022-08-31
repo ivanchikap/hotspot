@@ -2139,6 +2139,7 @@ body.show-sidebar {
 
 .intro__title {
     font-size: 46px;
+    line-height: 1.2;
     font-weight: 500;
     margin-bottom: 64px;
     text-align: center;
