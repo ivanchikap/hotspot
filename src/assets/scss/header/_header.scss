@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
@@ -49,6 +50,10 @@
 
     &--small {
       height: 80px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       @include mobile-large {
         height: 60px;
