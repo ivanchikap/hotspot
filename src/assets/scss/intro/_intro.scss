@@ -2,28 +2,28 @@
   text-align: center;
 
   &__title {
-    font-size: 62px;
-    font-weight: 600;
+    font-size: 46px;
+    font-weight: 500;
     margin-bottom: 64px;
     text-align: center;
 
     @include laptop {
-      font-size: 50px;
+      font-size: 38px;
     }
     
     @include mobile-large {
-      font-size: 40px;
+      font-size: 30px;
       margin-bottom: 44px;
     }
 
     @include mobile {
-      font-size: 34px;
+      font-size: 28px;
       margin-bottom: 34px;
     }
 
     @include mobile-height {
-      font-size: 30px;
-      margin-bottom: 20px;
+      font-size: 24px;
+      margin-bottom: 14px;
     }
   }
 

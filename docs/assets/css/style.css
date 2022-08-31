@@ -2138,36 +2138,36 @@ body.show-sidebar {
 }
 
 .intro__title {
-    font-size: 62px;
-    font-weight: 600;
+    font-size: 46px;
+    font-weight: 500;
     margin-bottom: 64px;
     text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
     .intro__title {
-        font-size: 50px;
+        font-size: 38px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .intro__title {
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 44px;
     }
 }
 
 @media screen and (max-width: 576px) {
     .intro__title {
-        font-size: 34px;
+        font-size: 28px;
         margin-bottom: 34px;
     }
 }
 
 @media screen and (max-height: 500px) {
     .intro__title {
-        font-size: 30px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 14px;
     }
 }
 
