@@ -2334,7 +2334,6 @@ body.show-sidebar {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("../images/globe-icon.svg");
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
@@ -2345,6 +2344,11 @@ body.show-sidebar {
         width: 20px;
         height: 20px;
     }
+}
+
+.footer__item--tel::before {
+    background-size: 8px;
+    background-image: url("../images/phone-call.svg");
 }
 
 .footer__item--cid::before {
